@@ -3,14 +3,9 @@ from rest_framework.decorators import api_view
 from rest_framework.views import APIView
 import tweepy
 from textblob import TextBlob
+from config import consumer_key, consumer_secret, access_token, access_token_secret
 
 
-
-consumer_key = 'OQlTtOmd9GVgdTOIvaOxsYaJg'
-consumer_secret = 'gqj4glKohpZzqYUHAQo5nG6kbSnKE7bUz5UHvqiFE8faRuGfpD'
-
-access_token = '2333062622-pYWn2sIT6fCQoU8BghfDelTq5ylc4lQdPhGPcxU'
-access_token_secret = 'ZHzJwvddyaaJLSWqswa5ZKgNWpUzcjn9tsOjMp2yFGV9k'
 
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)

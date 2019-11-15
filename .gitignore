@@ -6,3 +6,7 @@ venv/
 *.idea
 *.venv/
 *.venv
+/config.py/
+*.config.py/
+.config.py/
+config.py
